@@ -1,0 +1,38 @@
+<svg width="1200" height="628" viewBox="0 0 1200 628" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <linearGradient id="bg" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#0d1117"/>
+      <stop offset="100%" stop-color="#161b22"/>
+    </linearGradient>
+  </defs>
+
+  <rect x="0" y="0" width="1200" height="628" fill="url(#bg)"/>
+
+  <text x="80" y="76" font-family="-apple-system, Segoe UI, Helvetica, Arial, sans-serif" font-size="16" font-weight="600" letter-spacing="2" fill="#2ea043">OPEN SOURCE &#183; CLAUDE CODE MOD</text>
+
+  <rect x="80" y="104" width="1040" height="130" rx="10" fill="#1c2128" stroke="#30363d"/>
+  <circle cx="104" cy="126" r="6" fill="#ff5f56"/>
+  <circle cx="124" cy="126" r="6" fill="#ffbd2e"/>
+  <circle cx="144" cy="126" r="6" fill="#27c93f"/>
+
+  <text x="104" y="172" font-family="Consolas, 'Courier New', monospace" font-size="20" fill="#8b949e">$ git commit -m "wip"</text>
+
+  <g transform="translate(104,196)" stroke="#f85149" stroke-width="2" fill="none" stroke-linecap="round">
+    <circle cx="7" cy="7" r="7" stroke-opacity="0.9"/>
+    <line x1="4.2" y1="4.2" x2="9.8" y2="9.8"/>
+    <line x1="9.8" y1="4.2" x2="4.2" y2="9.8"/>
+  </g>
+  <text x="124" y="206" font-family="Consolas, 'Courier New', monospace" font-size="18" fill="#f85149">commit-guard: GitHub token found in diff</text>
+
+  <text x="600" y="320" font-family="Georgia, 'Times New Roman', serif" font-style="italic" font-size="38" fill="#f0f6fc" text-anchor="middle">a real gate, not a nudge,</text>
+  <text x="600" y="366" font-family="Georgia, 'Times New Roman', serif" font-style="italic" font-size="38" fill="#f0f6fc" text-anchor="middle">between you and a leaked key.</text>
+  <text x="600" y="404" font-family="-apple-system, Segoe UI, Helvetica, Arial, sans-serif" font-size="18" fill="#6e7681" text-anchor="middle">blocks the commit outright, fails open on its own bugs</text>
+
+  <g transform="translate(600,470)" stroke="#2ea043" stroke-width="2.3" fill="none" stroke-linejoin="round">
+    <path d="M0 -14 L12 -8 L12 2 C12 9 7 13.5 0 16 C-7 13.5 -12 9 -12 2 L-12 -8 Z"/>
+    <path d="M-4.5 1 L-1 5 L5 -4" stroke-linecap="round"/>
+  </g>
+
+  <text x="600" y="520" font-family="-apple-system, Segoe UI, Helvetica, Arial, sans-serif" font-size="22" font-weight="700" fill="#f0f6fc" text-anchor="middle">commit-guard</text>
+  <text x="600" y="546" font-family="Consolas, 'Courier New', monospace" font-size="15" fill="#6e7681" text-anchor="middle">github.com/thisismairaj/commit-guard</text>
+</svg>
