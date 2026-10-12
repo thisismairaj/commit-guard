@@ -1,0 +1,9 @@
+# working notes: kept local, not shown publicly
+docs/
+
+content/
+
+.claude-brain/
+
+# types the engine vendors into a dev-mod folder at load/reload time - never hand-authored, never committed
+.claude-plugin/types/

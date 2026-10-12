@@ -1,0 +1,10 @@
+{
+  "name": "commit-guard",
+  "version": "0.1.0",
+  "description": "Blocks a git commit when the staged diff looks like it contains a real secret - an API key, a private key, a token - before it ships.",
+  "author": {
+    "name": "thisismairaj",
+    "url": "https://github.com/thisismairaj"
+  },
+  "license": "MIT"
+}
