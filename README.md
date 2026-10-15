@@ -7,6 +7,28 @@
 
 ---
 
+## Why this matters
+
+A leaked API key doesn't cost you the five minutes it takes to rotate it. It
+costs whatever happens in the window between the push and the rotation - and
+by the time you notice, a key that hit a public repo may already be scraped
+and replayed. The entire value of commit-guard is closing that window before
+it opens: catching the secret at `git commit`, not at `git push`, not after a
+security bot emails you.
+
+It's a free, always-on check with nothing to configure and nothing to
+maintain. Most commits, it does nothing at all. The one time it matters,
+it's the difference between an awkward five-second fix and an incident.
+
+**Two honest limits.** It only watches commits that go through Claude Code's
+own Bash tool, so a commit typed directly into a terminal outside a session
+isn't covered. And it scans the diff before the commit runs, so a single
+chained command like `git add -A && git commit -m "..."` stages its changes
+after the scan already ran against the old state - a secret added in that
+same command can slip through. Treat it as a strong last line of defense
+against the common mistake, not a guarantee against every possible sequence
+of commands.
+
 ## What it does
 
 Hooks every `git commit`, scans `git diff --cached` (and the working tree too,
